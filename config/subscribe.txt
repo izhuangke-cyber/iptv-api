@@ -10,3 +10,19 @@
 [WHITELIST]
 # 以下是订阅源的白名单，白名单内的订阅源获取的接口将不会参与测速，始终保留至结果最前。
 # This is the whitelist for subscription sources. Subscription sources in the whitelist will not participate in speed testing and will always be retained at the front of the results.
+# ============================================================
+# IPTV-API 订阅源列表 (config/subscribe.txt)
+# 每行一个订阅地址，支持 txt / m3u / m3u8
+# 官方格式说明见 docs/tutorial.md -> 添加数据源与更多
+#
+# 如需为某订阅源指定 User-Agent，在地址后追加 UA=值
+#   例如：https://example.com/sub.m3u UA="Mozilla/5.0 xxx"
+# ============================================================
+
+# 中国地区频道（iptv-org 开源公共源，数量较小、与你位置相关）
+https://iptv-org.github.io/iptv/countries/cn.m3u
+
+# 全球全部频道（约上万条，首次跑会非常慢甚至可能超时，按需启用）
+# https://iptv-org.github.io/iptv/index.m3u
+
+# ===== 在此下方粘贴你自己的稳定订阅链接（每行一个）=====
